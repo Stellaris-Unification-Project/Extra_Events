@@ -1,0 +1,46 @@
+###########################################################################
+##### Written by ZakkerDoodle(Burgermeister) for the Extra Events Mod #####
+###########################################################################
+
+# root = ship scope
+# from = planet scope
+
+# Nuclear Explosion                           		
+namespace = boom_asteroid
+
+ship_event = {				
+	id = boom_asteroid.1				
+	title = boom_asteroid.1.name			
+	desc = boom_asteroid.1.desc		
+	picture = GFX_evt_mining_station	
+	show_sound = event_ship_bridge	
+	location = FROM				
+
+	is_triggered_only = yes		
+
+	immediate = {
+		from = {
+			change_pc = pc_asteroid
+		}
+		
+	    kill_leader = { type = scientist show_notification = yes }
+		fleet = { destroy_fleet = this }										
+		
+	}
+
+	option = {
+		name = boom_asteroid.1.a 
+		
+		owner = {
+			add_resource = {
+				influence = 25
+			}
+			add_monthly_resource_mult = {
+				resource = engineering_research
+				value = @tier1researchreward
+				min = @tier1researchmin
+				max = @tier1researchmax
+			}
+		}
+	}
+}

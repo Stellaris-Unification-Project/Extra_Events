@@ -1,0 +1,90 @@
+﻿l_polish:
+# Energy Vortex, alias « Houston, we have a problem »
+ eev_houston_category: "Wir energetyczny"
+ eev_houston_category_desc: "§B[Root.GetFleetName]§! natrafił na potężną anomalię engergetyczną na bliskiej orbicie §Y[From.GetName]§!. Na rozkaz §G[Root.GetLeaderName]§! zdecydowano ropocząć wnikliwą analizę tego niecodziennego zjawiska."
+ eev_houston.1.name: "[Root.owner.Capital.GetName], mamy problem."
+ eev_houston.1.desc: "Złe wieści! Skanowanie zakłóciło delikatną strukturę wiru, wywołując gwałtowną falę energetyczną, która unieruchomiła silniki naszego okrętu badwczego. §B[Root.GetFleetName]§! zaczyna z wolna dryfować w kierunku studni grawitacyjnej planety.\n\nJeśli nie podejmiemy żadnych działań, jednostka wkrótce uderzy w powierzchnię §Y[From.GetName]§!."
+ eev_houston.1a: "Natychmiast wysłać okręt konstrukcyjny!"
+
+ eev_houston.2.name: "Ratując okręt naukowy"
+ eev_houston.2.desc: "Nasza załoga techników pracowała w pocie czoła, żeby przywrócić do stanu używalności §B[Root.GetFleetName]§!, gdy z wiru wystrzeliła kolejna fala energetyczna, unieruchamiając kolejną już jednostkę! Załogi obu okrętów pracują bez wytchnienia, aby naprawić silniki, jednak z każdą chwilą dystans między statkami a planetą maleje. Nasze okręty wojskowe teoretycznie powinny być pomocne w tej sytuacji, posiadając bardziej zaawansowane osłony, jak również systemy awaryjne, dzięki którym być może udałoby się odholować dwa pozostałe statki zanim te uderzą w powierzchnię planety. Z drugiej strony, możemy stracić i je..."
+ eev_houston.2a: "Niech okręt wojskowy odholuje jednostkę w bezpieczne miejsce."
+ eev_houston.2b: "To zbyt ryzykowne."
+
+ eev_houston.3.name: "Na pastwie losu"
+ eev_houston.3.desc: "Załoga §B[Root.GetFleetName]§! najwyraźniej pogodziła się ze swoim losem i postanowiła zebrać jak najwięcej danych w czasie którym im jeszcze pozostał. W momencie kiedy mieli wysłać raport z badań, anomalia ponownie ożyła. Siła emitowanej energii była na tyle duża, że gdybyśmy wysłali tam jeden z naszych okrętów konstrukcyjnych, z pewnością moglibyśmy teraz co najwyżej szacować wartość złomu. Jednostka wojskowa teoretycznie mogłaby przetrwać, jednak stoi to i tak pod dużym znakiem zapytania."
+
+ eev_houston.4.name: "Wojsko naszą tarczą"
+ eev_houston.4.desc: "Nasze okręty wojskowe spotkały się z §B[eev_vortex_sci.GetFleetName]§! oraz wysłanym uprzednio statkiem konstrukcyjnym, a następnie rozpoczeły powolny proces odholowywania ich z orbity §Y[eev_vortex_pla.GetName]§!. W trakcie tej operacji, wir wysłał kolejną falę energetyczną, jednak tym razem, ze względu na większą odległość od jego centrum, nasze jednostki doznały tylko kilku drobnych awarii drugo- i trzeciorzędnych systemów. Kilka minut później, ostrzeżenie nadeszło ze strony §G[eev_vortex_sci.GetLeaderName]§! - niestabilność anomalii osiągnęła właśnie punkt krytyczny. Pomimo wszelkich wysiłków załóg wszystkich jednostek, ucieczka stała się niemożliwa. Wir energetyczny implodował, wyzwalając astronomiczne ilości energii. Chwilę po otrzymaniu ostatnich danych z odczytów czujników pokładowych, wszelka komunikacja z [From.System.GetName] zamilkła."
+ eev_houston.4a: "Niedobrze..."
+
+ eev_houston.5.name: "Wojsko naszą tarczą"
+ eev_houston.5.desc: "Nasze okręty wojskowe spotkały się z §B[eev_vortex_sci.GetFleetName]§! oraz wysłanym uprzednio statkiem konstrukcyjnym, a następnie rozpoczeły powolny proces odholowywania ich z orbity §Y[eev_vortex_pla.GetName]§!. W trakcie tej operacji, wir wysłał kolejną falę energetyczną, jednak tym razem, ze względu na większą odległość od jego centrum, nasze jednostki doznały tylko kilku drobnych awarii drugo- i trzeciorzędnych systemów. Kilka minut później, ostrzeżenie nadeszło ze strony §G[eev_vortex_sci.GetLeaderName]§! - niestabilność anomalii osiągnęła właśnie punkt krytyczny. Pomimo wszelkich wysiłków załóg wszystkich jednostek, ucieczka stała się niemożliwa. Wir energetyczny implodował, wyzwalając astronomiczne ilości energii. Chwilę po otrzymaniu ostatnich danych z odczytów czujników pokładowych, wszelka komunikacja z [From.System.GetName] zamilkła."
+
+ eev_houston.6.name: "Pozbawieni wyjścia"
+ eev_houston.6.desc: "Ostatnia transmisja, którą otrzymaliśmy z §B[Root.GetFleetName]§! zawierała dane telemetryczne z chwili wybuchu wiru energetycznego. Nastąpiła ona chwilę przed tym, jak okręt wchodził w atmosferę §Y[From.GetName]§!. Części załogi może udałoby się przeżyć uderzenie w powierzchnię planety, jednak nie ma najmniejszych szans, żeby ktokolwiek przetrwał implozję wiru."
+ eev_houston.6a: "Wszechświat to niebezpieczne miejsce."
+
+ eev_houston.7.name: "Ratunek znikąd"
+ eev_houston.7.desc: "Ku głębokiemu zaskoczeniu i dezorientacji centrum kontroli [Root.owner.Capital.GetName], otrzymaliśmy transmisję od naszych okrętów pochłoniętych przez wir energetyczny! Zarówno nasze jednostki, jak i ich załogi są całe i zdrowe! Co więcej - załogi opowiadają wręcz niestworzoną historię.\n\nKiedy myśleli, że czeka ich nieunikniona zagłada, obcy statek nieznanego pochodzenia zajął pozycję pomiędzy naszymi okrętami a wirem, a jego osłony zaabsorbowały całą moc wybuchu. Chwilę potem obcy zniknęli tak szybko, jak szybko się pojawili - uprzednio jednak użyli jakiejś formy strumienia energii, który w pełni przywrócił nasze statki do pełnej sprawności.\n\nSystemy pokładowe §B[Root.GetFleetName]§! nie były nawet w stanie w pełni przeskanować obcej jednostki, jednak ten zlepek danych, który udało się nam otrzymać wyraźnie wskazuje, że nie korzystał on z żadnej z form znanego nam napędu."
+ eev_houston.7a: "Niepokojące..."
+ eev_houston.7b: "Nie wszystko co obce jest wrogie."
+
+ eev_houston.8.name: "Ratunek znikąd"
+ eev_houston.8.desc: "Ku głębokiemu zaskoczeniu i dezorientacji centrum kontroli [Root.owner.Capital.GetName], otrzymaliśmy transmisję od naszych okrętów pochłoniętych przez wir energetyczny! Zarówno nasze jednostki, jak i ich załogi są całe i zdrowe! Co więcej - załogi opowiadają wręcz niestworzoną historię.\n\nKiedy myśleli, że czeka ich nieunikniona zagłada, obcy statek nieznanego pochodzenia zajął pozycję pomiędzy naszymi okrętami a wirem, a jego osłony zaabsorbowały całą moc wybuchu. Chwilę potem obcy zniknęli tak szybko, jak szybko się pojawili - uprzednio jednak użyli jakiejś formy strumienia energii, który w pełni przywrócił nasze statki do pełnej sprawności.\n\nSystemy pokładowe §B[Root.GetFleetName]§! nie były nawet w stanie w pełni przeskanować obcej jednostki, jednak ten zlepek danych, który udało się nam otrzymać wyraźnie wskazuje, że nie korzystał on z żadnej z form znanego nam napędu."
+
+ eev_houston.9.name: "Pożegnalny prezent"
+ eev_houston.9.desc: "§G[Root.GetLeaderName]§!, w trakcie ewaluacji danych uzyskanych w wyniku ostatnich wydarzeń w związku z §B[Root.GetFleetName]§!, odkrył w komputerach pokładowych ukryty dotychczas blok danych naukowych. Oficer jest święcie przekonany, że wcześniej nie było tam nic takiego i najprawdopodobniej dane pochodzą z obcej jednostki. Po dogłębnej analizie, zadecydowano, że uzyskane materiały są w pełni bezpieczne i należy je opublikować."
+
+ EEV_SCI_REPAIR: "Naprawa okrętu naukowego"
+ EEV_SCI_REPAIR_DESC: "Wyślij statek konstrukcyjny celem naprawienia dryfującego okrętu naukowego zanim ten rozbije się na pobliskiej planecie."
+ EEV_MIL_REPAIR1: "Ocalenie okrętu naukowego"
+ EEV_MIL_REPAIR1_DESC: "Wyślij okręt wojskowy, żeby odholował okręt naukowy."
+ EEV_MIL_REPAIR2: "Ratowanie okrętów"
+ EEV_MIL_REPAIR2_DESC: "Wyślij flotę okrętów wojskowych(2), żeby odholowały okręt naukowy i statek konstrukcyjny."
+
+# Unexpected tower, alias Farewell Horizontal
+ eev_tower_city_category: "Niespodziewana struktura"
+ eev_tower_city_category_desc: "Skanowanie tego gazowego olbrzyma ujawniło coś niespodziewanego: monumentalny cylinder wyłaniający się spośród chmur."
+
+ eev_tower_city.1.name: "Gigantyczny cylinder"
+ eev_tower_city.1.desc: "Z głębin gazowego olbrzyma, spośród wirujących mgieł niekończącej się burzy magnetycznej - gdzie nawet nasze najlepsze osłony by zawiodły - wyłania się ogromny walec z metalu i betonu. Bardziej niesamowite jest jednak to co znajduje się na samym szczycie owego walca - ruiny miasta. Co więcej - w okolicy samego miasta znajduje się sporo wiszących w przestrzeni wiosek. Eksploracja tego miejsca wymaga znacznych zasobów, więc na chwilę obecną postanowiono przygotować bazę na otwartej przestrzeni miasta celem jak najszybszego rozpoczęcia badań."
+
+ # Archaeology site starts here
+ eev_tower_city_dig: "Niemożliwe miasto"
+ eev_tower_city_dig_desc: "Nasz zespół naukowy jest zajęty zakładaniem bazy. Ze względu na porozrzucane dosłownie wszędzie ruiny budynków, postęp badań będzie wymagał znacznej ilości wywiertów a następnie umacniania nadwątlonych czasem konstrukcji, ale tajemnice, które skrywa to miejsce sprawiają, że naukowcy żarliwie zabrali się do pracy."
+
+ eev_tower_city_dig.1.name: "Eksploracja"
+ eev_tower_city_dig.1.desc: "Nasz zespół naukowy jest zwarty i gotowy, aby rozpocząć eksplorację tego dziwnego miasta. Górna połowa struktury znajduje się wewnątrz strefy komfortu, gdzie ciśnienie i temperaturę atmosfery można określić jako nadające się do zycia. Ruiny miasta pokrywają większą część szczytu cylindra i to z pewnością tutaj znajdują się najcenniejsze dane. Nikt natomiast nie chce nawet myśleć o zejściu na dół, by zbadać jedną z wertykalnych wiosek po bokach budynku."
+
+ eev_tower_city_dig.2.name: "Tajemnice przeszłości"
+ eev_tower_city_dig.2.desc: "Nasze pierwsze odkrycia są nieco...dezorientujące. Rasa zamieszkująca to miejsce znajdowała się na przed-przestrzennym poziomie technologicznym i najwyraźniej nie byli w stanie dalej się rozwijać ze względu na wyeksploatowanie wszelkich dostępnych im zasobów. To wszystko sprawia, że mamy coraz więcej pytań i żadnych odpowiedzi. Mieszkańcy nie byliby w stanie zbudować tej struktury, biorąc pod uwagę poziom ich zaawansowania technologicznego, więc kto to zrobił i dlaczego? I jakim cudem ta prymitywna rasa się tutaj znalazła?"
+
+ eev_tower_city_dig.3.name: "Włamanie"
+ eev_tower_city_dig.3.desc: "Zespół badawczy dotarł do wielkiego budynku, który wciąż imponuje swoim rozmachem, choć w dużej częsci to ruina. Po dostaniu się do środka odkryto, pierwsze do tej pory - szczątki humanoidalnych mieszkańców. Na miejscu pozostawiono kilkoro naukowców celem pobrania próbek i ich analizy. W trakcie dalszej eksploracji, oficer naukowy natknął się na coś na kształt obszaru zastrzeżonego. Skany wskazują, że wnętrze pomieszczenia jest względnie nienaruszone, jednak dostanie się do środka będzie wymagało sporo pracy - na drodze stoją grube mury o bliżej nieokreślonej wytrzymałości oraz liczne rumowiska."
+
+ eev_tower_city_dig.4.name: "Zmiażdzeni"
+ eev_tower_city_dig.4.desc: "Udało nam się w końcu dostać do zamkniętego pomieszczenia gdzie odnaleźliśmy wysoko wydajne komputery połączone z całą infrastrukturą cylindra. Same tylko strzępy informacji wydobyte po pobieżnym przejrzeniu baz danych wywołują zawrót głowy. Struktura, o której myśleliśmy, że jest jakiegoś rodzaju cyilndrem, okazuje się gigantycznym drapaczem chmur. Wnętrze budynku zostało opuszczone wieki temu w wyniku wyniszczającej wojny domowej, która całkowicie złamała zamieszkującą planetę społeczność. Wraz z upływem czasu, wszystkie urządzenia, z których korzystali autochtoni zaczęły niszczeć, a oni sami, stanowiąc raptem niedobitki ich rasy, nie byli w stanie w żaden sposób temu zaradzić, cofając się tym samym w rozwoju. Stając się coraz bardziej prymitywni nie byli w stanie pojąć otaczającej ich technologii, a wyeksploatowana i zniszczona po latach wojny planeta nie była w stanie wyżywić kogokolwiek. Wraz z ostatnim, dogorywającym syntezatorem ich gatunek odszedł w zapomnienie..."
+ eev_tower_city_dig.4a: "Przerażająca opowieść."
+ eev_tower_city_dig.4t: "Ten starożytny budynek jest wybitnym osiągnięciem inżynieryjnym, który przez wieki zapewni zajęcie naszym naukowcom."
+ eev_tower_city_dig.4b: "Siedzimy na ogromnym stosie stopów."
+
+ # Scanned
+ eev_scanned_category: "Przeskanowani"
+ eev_scanned_category_desc: "Nasz okręt dotarł na orbitę obiecująco wyglądającej planety, rozpoczynając pełne skanowanie powierzchni globu. Spodziewamy się obiecujących rezultatów."
+ eev_scanned.1.name: "Sonda obcych"
+ eev_scanned.1.desc: "Sonda nieznanego pochodzenia pojawiła się znikąd i rozpoczęła skanowanie naszego okrętu. §G[Root.GetLeaderName]§! wskazał, żeby wykonać kontr-skanowanie §B[Root.GetFleetName]§!, jednak sonda zniknęła dosłownie sekundę później. Analiza pobieżnie zebranych danych wskazała, że sonda została zbudowana na bazie tej samej technologii co okręt nieznanego pochodzenia, który uratował nasze jednostki wciągane przez wir energetyczny."
+ eev_scanned.1a: "Ich technologia wykracza poza cokolwiek co udało się nam odkryć."
+ eev_scanned.1b: "Ich technologia jest nieakceptowalnym ryzykiem.
+
+# Ancient Echoes
+ eev_ancient_echoes_category: "Echa Starożytnych"
+ eev_ancient_echoes_category_desc: "Instrumenty pokładowe naszego okrętu wykryły strumień tachionów emanujących z wymiarowej szczeliny na orbicie §Y[From.GetName]§!. Zgodnie z rokazem oficera naukowego, z bezpiecznej odległości wystrzelono sondę, która ma za zadanie zebrać jak najwięcej informacji dotyczącycyh zaobserwowanego zjawiska."
+ eev_ancient_echoes.1.name: "Wizja dawno minionej bitwy"
+ eev_ancient_echoes.1.desc: "Nasza sonda nagrała przerażającą scenę rozgrywającą się tuż ponad wyrwą: dwie olbrzymie floty okrętów obcych ścierają się w straszliwej bitwie, używając broni wykraczającej poza nasz poziom technologiczny. Rozbłyski energii wywołane uderzeniami broni energetycznej o - zdawać by się mogło, nieprzeniknione osłony przeciwnika rozświetlają cały system niczym tysiąc słońc. Wtem, skoncentrowana wiązka energii rozdarła kadłub okrętu flagowego jednej z flot, a następnie uderzyła w reaktor wywołując reakcję łańcuchową, która całkowicie oślepiła naszą sondę. Gdy tylko zakłócenia przeminęły, szczelina zniknęła, jakby nigdy jej tam nie było. Późniejsza analiza pozycji gwiazd i oddziaływania energii tachionowej wskazuje, że bitwa miała miejsce ponad milion lat temu."
+
+# Mysterious Cache
+ eev_mysterious_cache_category: "Skrzynia Tajemnic"
+ eev_mysterious_cache_category_desc: "Sieć naszych sensorów wykryła nikły sygnał docierający z §Y[From.GetName]§!. W trakcie zbliżania się do wyjałowionej planety, okręt naukowy odkrył, że źródłem tego sygnału jest stary, niszczejący budynek. Co ciekawsze - na globie nie ma żadnych innych struktur."
+ eev_mysterious_cache.1.name: "Podarunek z przeszłości"
+ eev_mysterious_cache.1.desc: "Wejście do budynku nastręczyło nam nie lada trudności - nie ma tutaj standardowych drzwi, a przebicie się przez ściany okazało się niezwykle czasochłonne. Mury tego miejsca skrywały małe pomieszczenie, a w nim - na samym środku, podest, na którym odnaleźliśmy małą, bogato zdobioną skrzynkę. Dotychczas przeprowadzone skanowanie określiło wiek zarówno budynku, jak i pudełka, na 11.000 lat - co jednak ciekawsze - inskrypcje na postumencie zapisane zostały w jednym z języków używanych obecnie powszechnie w galaktyce! Conajmniej kłopotliwym zagadanieniem jest też to, że zapiski wprost nawiązują do §G[Root.GetLeaderName]§!, stwierdzając, że pudełko jest dla [Root.GetHerHim] podarunkiem. Szkatułka okazała się niesamowicie ciężka, co nie jest niczym dziwnym, biorąc pod uwagę jej zawartość - nieznanego pochodzenia stopy metali. Odkrycie to zapewni naszym naukowcom niezykłe materiały do badań. Niemniej jednak - odpowiedź na pytanie kto zbudował to miejsce oraz wiedział, że tu przybędziemy pozostaje tajemnicą."

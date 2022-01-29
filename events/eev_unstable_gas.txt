@@ -1,0 +1,67 @@
+###########################################################################
+##### Written by ZakkerDoodle(Burgermeister) for the Extra Events Mod #####
+###########################################################################
+
+# root = ship scope
+# from = planet scope
+
+# Unstable Gas                          		
+namespace = unstable_gas
+
+ship_event = {				
+	id = unstable_gas.1				
+	title = unstable_gas.1.name			
+	desc = unstable_gas.1.desc		
+	picture = GFX_evt_gas_giant	
+	show_sound = event_ship_bridge	
+	location = FROM				
+
+	is_triggered_only = yes		
+
+	immediate = {
+		from = {
+			create_ambient_object = {
+				type = "star_explosion"
+				play_animation_once = yes
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 0
+					angle = random
+				}
+			}
+			change_pc = pc_k_star
+			reset_planet = yes
+			if = {
+				limit = {
+					has_moon = yes
+				}
+				every_moon = {
+					change_pc = pc_shattered
+					reset_planet = yes
+				}
+			}
+		}
+		kill_leader = { type = scientist show_notification = yes }
+		fleet = { destroy_fleet = this }
+	}
+
+	option = {
+		name = TERRIBLE
+		custom_tooltip = "unstable_gas.1.tooltip"	
+		
+		owner = {
+			add_resource = {
+				influence = 200
+			}
+			add_monthly_resource_mult = {
+				resource = physics_research
+				value = @tier4researchreward
+				min = @tier4researchmin
+				max = @tier4researchmax
+			}
+		}
+	}
+}

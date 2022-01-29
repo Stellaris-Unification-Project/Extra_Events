@@ -1,0 +1,77 @@
+###########################################################################
+##### Written by ZakkerDoodle(Burgermeister) for the Extra Events Mod #####
+###########################################################################
+
+# root = ship scope
+# from = planet scope
+
+# Perfect Planet Anomaly
+namespace = perfect_planet
+
+ship_event = {
+	id = perfect_planet.1	
+	title = perfect_planet.1.name	
+	desc = perfect_planet.1.desc	
+	picture = GFX_evt_animal_wildlife	
+	show_sound = event_ship_bridge
+	location = FROM
+
+	is_triggered_only = yes
+
+	immediate = {
+		from = {
+			clear_deposits = yes
+		}
+	}
+
+	option = {
+		name = AMAZING
+		leader = {
+			add_experience = 225
+		}
+		
+		owner = {
+			add_monthly_resource_mult = {
+				resource = influence
+				value = @tier3influencereward
+				min = @tier3influencemin
+				max = @tier3influencemax
+			}
+		}
+
+		owner = {
+			add_monthly_resource_mult = {
+				resource = engineering_research
+				value = @tier2researchreward
+				min = @tier2researchmin
+				max = @tier2researchmax
+			}
+		}
+
+		owner = {
+			add_monthly_resource_mult = {
+				resource = society_research
+				value = @tier2researchreward
+				min = @tier2researchmin
+				max = @tier2researchmax
+			}
+		}
+
+		owner = {
+			add_monthly_resource_mult = {
+				resource = physics_research
+				value = @tier2researchreward
+				min = @tier2researchmin
+				max = @tier2researchmax
+			}
+		}
+
+		from = { 
+			set_deposit = d_energy_3
+		}
+
+		from = { 
+			set_deposit = d_minerals_3
+		}
+	}
+}

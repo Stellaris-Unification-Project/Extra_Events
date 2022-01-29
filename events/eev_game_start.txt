@@ -1,0 +1,13 @@
+namespace = eev_start
+
+event = {
+	id = eev_start.1
+	hide_window = yes
+    is_triggered_only = yes
+	
+	trigger = { NOT = { has_global_flag = has_extra_events } }
+	
+	immediate = {
+		set_global_flag = has_extra_events
+	}
+}

@@ -1,0 +1,40 @@
+###########################################################################
+##### Written by ZakkerDoodle(Burgermeister) for the Extra Events Mod #####
+###########################################################################
+
+# root = ship scope
+# from = planet scope
+
+# Crushed Anomaly
+namespace = crushed
+
+ship_event = {
+	id = crushed.1	
+	title = crushed.1.name	
+	desc = crushed.1.desc	
+	picture = GFX_evt_burning_settlement
+	show_sound = event_ship_bridge
+	location = FROM
+
+	is_triggered_only = yes
+
+	immediate = {
+	}
+
+	option = {
+		name = OOPS
+		leader = {
+			add_experience = 400
+			add_trait = leader_trait_meticulous
+		}
+		
+		owner = {
+			add_monthly_resource_mult = {
+				resource = energy
+				value = @tier4materialreward
+				min = @tier4materialmin
+				max = @tier4materialmax
+			}
+		}
+	}
+}

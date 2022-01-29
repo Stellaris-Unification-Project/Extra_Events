@@ -1,0 +1,101 @@
+###########################################################################
+##### Written by ZakkerDoodle(Burgermeister) for the Extra Events Mod #####
+###########################################################################
+
+# root = ship scope
+# from = planet scope
+
+# Ayy Anomaly
+namespace = ayy		
+
+ship_event = {	
+	id = ayy.1		
+	title = ayy.1.name			
+	desc = ayy.1.desc		
+	picture = GFX_evt_colony_settlement
+	show_sound = event_ship_bridge	
+	location = FROM				
+
+	is_triggered_only = yes		
+
+	immediate = {	
+	}
+
+	option = {
+		name = ayy.1.a 	
+		leader = {			
+			add_experience = 175
+		}
+		
+		owner = {
+			add_monthly_resource_mult = {
+				resource = energy
+				value = @tier3materialreward
+				min = @tier3materialmin
+				max = @tier3materialmax
+			}
+		}
+	}
+	
+	option = {
+		name = ayy.1.b 	
+		leader = {			
+			add_experience = 175
+		}
+		
+		owner = {
+			add_monthly_resource_mult = {
+				resource = influence
+				value = @tier3influencereward
+				min = @tier3influencemin
+				max = @tier3influencemax
+			}
+		}
+	}
+	
+	option = {
+		name = ayy.1.c 
+		trigger = { owner = {
+		is_militarist = yes } }
+		leader = {			
+			add_experience = 175
+		}
+			
+		owner = {
+			save_event_target_as = owner_country
+			create_fleet = { name = "Head-in-Sand" }
+			last_created_fleet = {
+				set_owner = prev
+				create_ship_design = {
+					design = "Dagger"
+					#ftl = event_target:owner_country
+				}
+				create_ship = {
+					graphical_culture = "pirate_01"
+					name = "Ostrich"
+					design = last_created_design
+				}
+				set_location = from
+			}
+		}
+	}
+	
+	option = {
+		name = ayy.1.d 	
+		trigger = { owner = {
+		is_xenophobe = yes } }	
+		leader = {			
+			add_experience = 175
+		}
+		
+		owner = {
+			add_monthly_resource_mult = {
+				resource = influence
+				value = @tier3influencereward
+				min = @tier3influencemin
+				max = @tier3influencemax
+			}
+		}
+	}
+	
+}

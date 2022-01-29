@@ -1,0 +1,11 @@
+on_game_start = {
+	events = {
+		eev_start.1
+	}
+}
+
+on_entering_system_first_time = {
+	events = {
+		star_stuff.1000
+	}
+}

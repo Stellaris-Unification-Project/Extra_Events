@@ -1,0 +1,90 @@
+﻿l_english:
+# Energy Vortex, alias « Houston, we have a problem »
+ eev_houston_category: "Energy Vortex"
+ eev_houston_category_desc: "§B[Root.GetFleetName]§! has encountered a powerful energetic anomaly in close orbit of §Y[From.GetName]§!. §G[Root.GetLeaderName]§! decided to begin an analysis of this strange energy vortex."
+ eev_houston.1.name: "[Root.owner.Capital.GetName], we have a problem."
+ eev_houston.1.desc: "Bad news! The scan disturbed the vortex, sending a powerful energy wave that disrupted the ship's engines. The §B[Root.GetFleetName]§! is slowly drifting towards the gravity well of the planet.\n\nWithout repairs, it will crash into §Y[From.GetName]§!."
+ eev_houston.1a: "Send a construction ship at once!"
+
+ eev_houston.2.name: "Rescuing the science ship"
+ eev_houston.2.desc: "Our constructor was working hard to repair §B[Root.GetFleetName]§! when the vortex erupted again, disabling the ships! Both crews are working frantically to repair their systems while their ships are getting closer to the planet. Our military ships have reinforced systems and better shields, they should be able to handle this, but if they don't, we will lose another ship."
+ eev_houston.2a: "Have a military ship haul them to safety."
+ eev_houston.2b: "We can't take the risk."
+
+ eev_houston.3.name: "Left without repairs"
+ eev_houston.3.desc: "The crew of §B[Root.GetFleetName]§! acknowledged the bad news and use their remaining time to gather as much data as they can. They were about to send a report when the anomaly erupts again. We would have lost our construction ship if had sent one. Our military ships have reinforced systems and better shields, they should be able to handle this, but if they don't, we will lose it."
+
+ eev_houston.4.name: "Military to the rescue"
+ eev_houston.4.desc: "Our military ships met with §B[eev_vortex_sci.GetFleetName]§! and our constructor and started hauling them far from the orbit of §Y[eev_vortex_pla.GetName]§!. The vortex exploded again but our guess was right: our fleet only suffered some minor malfunctions, and their redundant systems immediately kicked in. But a few minutes later, §G[eev_vortex_sci.GetLeaderName]§! warned that the anomaly's instability was now critical and urged the fleet to speed up, but before they could escape, the vortex finaly imploded, and an enormous blast of energy was the last bit of information we got before losing all communications from [From.System.GetName]."
+ eev_houston.4a: "This is bad..."
+
+ eev_houston.5.name: "Military to the rescue"
+ eev_houston.5.desc: "Our military ships met with §B[eev_vortex_sci.GetFleetName]§! and started hauling it far from the orbit of §Y[eev_vortex_pla.GetName]§!. The vortex exploded again but our guess was right: our ships only suffered some minor malfunctions, and their redundant systems immediately kicked in. But a few minutes later, §G[[eev_vortex_sci.GetLeaderName]§! warned that the anomaly's instability was now critical and urged the fleet to speed up, but before they could escape, the vortex finaly imploded, and an enormous blast of energy was the last bit of information we got before losing all communications from [From.System.GetName]."
+
+ eev_houston.6.name: "No rescue"
+ eev_houston.6.desc: "The last transmission we received from §B[Root.GetFleetName]§! was the final gigantic destruction of the energy vortex as the ship started to enter the atmosphere of §Y[From.GetName]§!. There's no way they could have survived that."
+ eev_houston.6a: "The universe is a dangerous place."
+
+ eev_houston.7.name: "Rescue from out there"
+ eev_houston.7.desc: "To the surprise of [Root.owner.Capital.GetName] control center, we received a transmission from our lost ships! They're all safe and excitedly reported an incredible story.\n\nAs they thought to be doomed, an alien ship of unknown design emerged from nowhere and shielded them from the full strength of the explosion. Then it used some energy beams to repair the damaged ships before disappearing at an incredible speed.\n\n§B[Root.GetFleetName]§! systems could only scan it for a few seconds, revealing that the strange ship wasn't using any known means of propulsion."
+ eev_houston.7a: "Concerning..."
+ eev_houston.7b: "We have friends out there."
+
+ eev_houston.8.name: "Rescue from out there"
+ eev_houston.8.desc: "To the surprise of [Root.owner.Capital.GetName] control center, we received a transmission from our lost ships! They're all safe and excitedly reported an incredible story.\n\nAs they thought to be doomed, an alien ship of unknown design emerged from nowhere and shielded them from the full strength of the explosion. Then it used some energy beams to repair the damaged ships before disappearing at an incredible speed.\n\n§B[Root.GetFleetName]§! systems could only scan it for a few seconds, revealing that the strange ship wasn't using any known means of propulsion."
+
+ eev_houston.9.name: "A parting gift."
+ eev_houston.9.desc: "As §G[Root.GetLeaderName]§! was conducting an evaluation of §B[Root.GetFleetName]§!'s systems after the recent events, he discovered a hidden block of scientific data in the ship's computer. He's adamant that it wasn't here before the incident and it probably comes from the strange ship. After a thorough analysis, he declared the data totally safe and published it."
+
+ EEV_SCI_REPAIR: "Repairing the science ship"
+ EEV_SCI_REPAIR_DESC: "Send a construction ship to repair our drifting science ship before it crashes on the nearby planet."
+ EEV_MIL_REPAIR1: "Rescuing the science ship"
+ EEV_MIL_REPAIR1_DESC: "Send a military fleet to haul the science ship to safety."
+ EEV_MIL_REPAIR2: "Rescuing our ships"
+ EEV_MIL_REPAIR2_DESC: "Send a military fleet with at least two ships to haul the science and construction ships to safety."
+
+# Unexpected tower, alias Farewell Horizontal
+ eev_tower_city_category: "Unexpected tower"
+ eev_tower_city_category_desc: "Our sensors have picked up something unexpected in this gas giant: a monumental tower is emerging from the clouds."
+
+ eev_tower_city.1.name: "Giant tower"
+ eev_tower_city.1.desc: "From the depths of the gas giant where our best shields would fail in the swirling mists of a neverending magnetic storm, comes a huge cylinder of metal and concrete. What's even more exciting is the city ruins on the top of the pillar. And the villages hanging on various places on the sides. An exploration of this place would require some resources and it was decided to prepare a base camp on an open area of the city to start an exploration."
+
+ # Archaeology site starts here
+ eev_tower_city_dig: "The impossible city"
+ eev_tower_city_dig_desc: "Our science team is busy establishing a base camp. Due to the crumbled buildings everywhere, progress will require a lot of drilling and consolidations, but the mysteries of this place make the team eager to start."
+
+ eev_tower_city_dig.1.name: "Exploring the city"
+ eev_tower_city_dig.1.desc: "Our team is now ready to explore this strange place. The upper half of the tower is at the middle of the comfort zone where the pressure and temperature of the atmosphere makes it habitable. The city ruins covers most of the top of the cylinder, and is certainly where they will find the most valuable data - noone wants to go down to explore one of the vertical villages on the sides of the pillar."
+
+ eev_tower_city_dig.2.name: "Mysteries of the past"
+ eev_tower_city_dig.2.desc: "Our first discoveries are quite confusing. The inhabitants of the city were clearly at a pre-spatial technology level, and they were clearly stuck at this level due to the total lack of resources of their impossible home. This raises even more questions. They couldn't have built the pillar, so who did it and how? And how did the primitives came to live here?"
+
+ eev_tower_city_dig.3.name: "Breaking in"
+ eev_tower_city_dig.3.desc: "The science team arrived in front of a great building, still imposing despite being partially ruined. After breaking in, they discovered the first remains of the humanoid inhabitants and left behind a few members to take some samples and analyze them. Progressing further, §G[Root.GetLeaderName]§! entered some sort of restricted area. Scans indicate that the interior is still intact, but between the crumbled ceilings and the reinforced walls, this will require some work to gain access to it."
+
+ eev_tower_city_dig.4.name: "Broken by war"
+ eev_tower_city_dig.4.desc: "We finally gained access to the interior bunker and found a huge computer that's connected to the whole cylinder - and the first gathered data is enough to make our head spin. It isn't a massive pillar, but a titanic skyscraper. The interior was abandoned long ago after a brutal civil war that totally broke their society. They became more and more primitive as their equipment fell in disrepair. The last tribes that roamed the surface weren't able to comprehend their old technology anymore, and when the last synthetizers stopped working, their end came soon after."
+ eev_tower_city_dig.4a: "A tragic tale."
+ eev_tower_city_dig.4t: "The ancient building is a feat of engineering that will keep our scientists busy for centuries."
+ eev_tower_city_dig.4b: "We're sitting on a huge pile of alloys."
+
+ # Scanned
+ eev_scanned_category: "Scanned"
+ eev_scanned_category_desc: "Our ship has arrived in orbit of a promising planet and has started scanning it. We expect to have some interesting results very soon."
+ eev_scanned.1.name: "Alien probe"
+ eev_scanned.1.desc: "A probe of unknown origin suddenly appeared from nowhere and started to scan our ship. §G[Root.GetLeaderName]§! pointed the §B[Root.GetFleetName]§!'s scanners on the probe but it disappeared at an impossible speed. The analysis of the mere seconds of data we could gather shows that it uses the same technology than the unknown ship that saved our fleets from the collapsing energy vortex."
+ eev_scanned.1a: "Their technology is far beyond anything we know."
+ eev_scanned.1b: "Their technology is an unacceptable threat."
+
+# Ancient Echoes
+ eev_ancient_echoes_category: "Ancient Echoes"
+ eev_ancient_echoes_category_desc: "Our ship's instruments have detected an influx of tachyons emanating from a dimentional rift above §Y[From.GetName]§!. §G[Root.GetLeaderName]§! has decided to launch a probe from a safe distance to gather as much data as possible."
+ eev_ancient_echoes.1.name: "Battle from the past"
+ eev_ancient_echoes.1.desc: "Our probe recorded a frightening scene beyond the rift: two great alien fleets are engaged in a ferocious battle, using weapons of incredible strength. Flashes of energy illuminate the whole system like a thousand suns as they disperses on seemingly impenetrable shields. Then, a concentrated fire tore through the defenses of a capital ship, hitting its reactor. The following explosion blinds our probe, and when the instruments recover, the rift has disappeared. Later analysis of the star positions and the tachyon's energy place the battle over a million years ago."
+
+# Mysterious Cache
+ eev_mysterious_cache_category: "Mysterious Cache"
+ eev_mysterious_cache_category_desc: "Our sensors have spotted a faint signal emanating from §Y[From.GetName]§!. Moving closer, the §B[Root.GetFleetName]§! discovered that it's emanating from an old building that stands alone on this desolate world."
+ eev_mysterious_cache.1.name: "A gift from the past"
+ eev_mysterious_cache.1.desc: "Entering the building proved difficult as it had very thick walls and no entrance. These walls were protecting a small room that contained a central altar with an ornate box on it. Scans indicate the building and the box are eleven thousands years old, but the altar has inscriptions in our modern language! More troubling is that they precisely name §G[Root.GetLeaderName]§!, saying that the box is a gift for [Root.GetHerHim]. The box is incredibly heavy, considering that it's full of an unknown alloy that will certainly prove useful and give our scientists something to work on. But who made this gift, and how did he know we would come?"

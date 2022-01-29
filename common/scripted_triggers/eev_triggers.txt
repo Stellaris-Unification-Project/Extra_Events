@@ -1,0 +1,152 @@
+eev_is_general_planet = {
+	OR = {
+		habitable_planet = yes
+		eev_is_uninhabitable = yes
+	}
+}
+
+eev_is_desertic = {
+	OR = {
+		is_planet_class = pc_barren
+		is_planet_class = pc_desert
+		# Planetary Diversity
+		is_planet_class = pc_sandsea
+		is_planet_class = pc_oasis
+		# Real Space
+		is_planet_class = pc_dune
+		is_planet_class = pc_oasis
+		is_planet_class = pc_salt
+		is_planet_class = pc_adiabatic
+	}
+}
+
+eev_is_frozen = {
+	OR = {
+		is_planet_class = pc_frozen
+		# Planetary Diversity
+		is_planet_class = pc_antarctic
+		is_planet_class = pc_snow
+		is_planet_class = pc_glacio
+		is_planet_class = pc_eyeball
+		is_planet_class = pc_subglacial
+		is_planet_class = pc_hydrocarbon
+		# Real Space
+		is_planet_class = pc_glacial
+		is_planet_class = pc_melting
+		is_planet_class = pc_geothermal
+		is_planet_class = pc_ice
+	}
+}
+
+eev_is_gas_giant = {
+	OR = {
+		is_planet_class = pc_gas_giant
+		# Planetary Diversity
+		is_planet_class = pc_hot_gas_giant
+		is_planet_class = pc_cloudless_gas_giant
+		is_planet_class = pc_cold_gas_giant
+	}
+}
+
+eev_is_scientist_cautious = {
+	OR = {
+		has_trait = leader_trait_paranoid
+		has_trait = leader_trait_roamer
+		has_trait = leader_trait_scientist_chosen
+		has_trait = leader_trait_expertise_particles
+		has_trait = leader_trait_curator
+		has_trait = leader_trait_cataloger
+		# Expanded Stellaris Traditions
+		has_trait = leader_trait_roamer_est_2
+		has_trait = leader_trait_expertise_particles_est_2
+	}
+}
+
+eev_is_heavy_metal = {
+	OR = {
+		is_mechanical_empire = yes
+		is_robot_empire = yes
+	}
+}
+
+eev_is_uninhabitable = {
+	OR = {
+		uninhabitable_regular_planet = yes
+		# Planetary Diversity
+		is_planet_class = pc_diamond
+		is_planet_class = pc_chthonian
+		is_planet_class = pc_volcanic
+		is_planet_class = pc_subglacial
+		is_planet_class = pc_hydrocarbon
+		is_planet_class = pc_hothouse
+		is_planet_class = pc_iron
+		is_planet_class = pc_carbon
+		# Giga Diversity
+		is_planet_class = pc_melted_frozen
+		# Real Space
+		is_planet_class = pc_sterile
+	}
+}
+
+eev_is_valid_system = {
+	solar_system = {
+		exists = star
+		NOR = {
+			any_system_planet = {
+				OR = {
+					exists = archaeological_site
+					has_planet_flag = hatchling_egg
+					has_planet_flag = suppress_archaeological_sites
+				}
+			}
+			has_star_flag = empire_cluster
+			is_fe_cluster = yes
+			has_star_flag = lcluster
+			has_star_flag = sealed_system
+			has_star_flag = crystal_home_system
+			has_star_flag = amoeba_home_system
+			has_star_flag = drone_home_system
+			has_star_flag = guardian
+			# Ancient Empire
+			has_star_flag = ag_no_jump_in_system
+			# ACOT
+			has_star_flag = outercluster
+			# Warship Girls R And MIST Species
+			has_star_flag = wg_sealed_system
+			has_star_flag = wg_psionic_systems
+			# SW:Kuat Ancient Empire
+			has_star_flag = Kuat_system
+			has_star_flag = Kuat_system_1
+			has_star_flag = Kuat_system_2
+			has_star_flag = Kuat_system_3
+			has_star_flag = kuat_initial_system
+			has_star_flag = Kuat_system_int
+			has_star_flag = Kuat_system_int_1
+			has_star_flag = Kuat_system_int_2
+			has_star_flag = Kuat_system_int_3
+			has_star_flag = Kuat_system_int_4			
+			has_star_flag = starkiller_system	
+			# Gigastructural Engineering and More
+			AND = {
+				has_global_flag = gigastructures_enabled
+				OR = {
+					has_star_flag = ehof_compound_system
+					has_star_flag = giga_core_03
+					cohesive_system = yes
+					urmazin_system = yes
+					everchanging_system = yes
+					katzen_jump_blocked_system = yes
+					has_star_flag = maginot_anti_jump_star
+				}
+			}
+			# Some Events of Outside Cluster
+			has_star_flag = nep_Krahen_cluster
+			has_star_flag = nep_Scrus_cluster
+			has_global_flag = nep_not_pass_Aemethms
+			has_star_flag = nep_dragon_system
+			has_star_flag = nep_heptagram_cluster
+			# Real Space
+			has_star_flag = star_disaster
+		}
+	}
+}

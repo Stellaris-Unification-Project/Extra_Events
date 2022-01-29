@@ -1,0 +1,38 @@
+###########################################################################
+##### Written by ZakkerDoodle(Burgermeister) for the Extra Events Mod #####
+###########################################################################
+
+# root = ship scope
+# from = planet scope
+
+# Space Grave Anomaly
+namespace = space_grave
+
+ship_event = {
+	id = space_grave.1
+	title = space_grave.1.name
+	desc = space_grave.1.desc
+	picture = GFX_evt_fleet_good
+	show_sound = event_ship_bridge
+	location = FROM
+
+	is_triggered_only = yes
+	immediate = {
+	}
+
+	option = {
+		name = REMARKABLE
+		leader = {
+			add_experience = 400
+		}
+		
+		owner = {
+			add_monthly_resource_mult = {
+				resource = influence
+				value = @tier4influencereward
+				min = @tier4influencemin
+				max = @tier4influencemax
+			}
+		}
+	}
+}

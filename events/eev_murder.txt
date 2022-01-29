@@ -1,0 +1,268 @@
+###########################################################################
+##### Written by ZakkerDoodle(Burgermeister) for the Extra Events Mod #####
+###########################################################################
+
+namespace = murder_event
+
+# Start
+ship_event = {
+	id = murder_event.1
+	title = "murder_event.1.name"
+	desc = "murder_event.1.desc"
+	picture = GFX_evt_metropolis
+	location = FROM
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		from = { save_event_target_as = murder_position }
+	}
+	
+	option = {
+		name = "murder_event.1.a"
+        enable_special_project = {
+            name = "MURDER_PROJECT"
+            location = from
+			owner = root
+        }
+		owner = {
+			add_resource = {
+				influence = 100
+			}
+		}
+	}
+    
+    option = {
+        name = "murder_event.1.b"
+		owner = {
+			add_resource = {
+				influence = -100
+			}
+			while = {
+				count = 5
+				random_owned_pop = {
+					kill_pop = yes
+				}
+			}
+		}
+    }
+}
+
+# 2
+ship_event = {
+	id = murder_event.2
+	title = "murder_event.2.name"
+	desc = "murder_event.2.desc"
+	picture = GFX_evt_metropolis
+	
+	is_triggered_only = yes
+	
+	immediate = {
+        fleet = {
+            set_event_locked = yes
+        }
+	}
+	
+	option = {
+		name = "murder_event.2.a"
+        hidden_effect = { ship_event = { id = murder_event.4 days = 45 } }
+        leader = { 
+            add_experience = 50
+        }
+		owner = {
+			add_monthly_resource_mult = {
+				resource = society_research
+				value = @tier2researchreward
+				min = @tier2researchmin
+				max = @tier2researchmax
+			}
+			random_owned_pop = {
+				kill_pop = yes
+			}
+		}
+	}
+}
+
+# 3
+country_event = {
+    id = murder_event.3
+    title = "murder_event.3.name"
+	desc = "murder_event.3.desc"
+	picture = GFX_evt_metropolis
+	
+	is_triggered_only = yes
+
+    option = {
+        name = "murder_event.3.a"
+		owner = {
+			add_resource = {
+				influence = -100
+			}
+			while = {
+				count = 5
+				random_owned_pop = {
+					kill_pop = yes
+				}
+			}
+		}
+    }
+}
+
+# 4
+ship_event = {
+    id = murder_event.4
+    title = "murder_event.4.name"
+	desc = "murder_event.4.desc"
+	picture = GFX_evt_metropolis
+	
+	is_triggered_only = yes
+	
+	
+    option = {
+        name = "murder_event.4.a"
+        hidden_effect = { ship_event = { id = murder_event.5 days = 45 } }
+		owner = {
+			add_monthly_resource_mult = {
+				resource = society_research
+				value = @tier2researchreward
+				min = @tier2researchmin
+				max = @tier2researchmax
+			}
+			random_owned_pop = {
+				kill_pop = yes
+			}
+		}
+    }
+}
+
+# 5
+ship_event = {
+    id = murder_event.5
+    title = "murder_event.5.name"
+	desc = "murder_event.5.desc"
+	picture = GFX_evt_metropolis
+	
+	is_triggered_only = yes
+    
+    option = {
+        name = "murder_event.5.a"
+		hidden_effect = { ship_event = { id = murder_event.6 days = 45 } }
+		owner = {
+			add_monthly_resource_mult = {
+				resource = society_research
+				value = @tier2researchreward
+				min = @tier2researchmin
+				max = @tier2researchmax
+			}
+			random_owned_pop = {
+				kill_pop = yes
+			}
+		}
+        leader = { 
+            add_experience = 50
+        }
+    }
+}
+
+# 6
+ship_event = {
+    id = murder_event.6
+    title = "murder_event.6.name"
+	desc = "murder_event.6.desc"
+	picture = GFX_evt_metropolis
+	
+	is_triggered_only = yes
+    
+	immediate = {
+	}
+	
+    option = {
+        name = "murder_event.6.a"
+		hidden_effect = { ship_event = { id = murder_event.7 days = 15 } }
+        leader = { 
+            add_experience = 50
+        }
+		owner = {
+			add_monthly_resource_mult = {
+				resource = society_research
+				value = @tier2researchreward
+				min = @tier2researchmin
+				max = @tier2researchmax
+			}
+			random_owned_pop = {
+				kill_pop = yes
+			}
+		}
+    }
+}
+
+# 7
+ship_event = {
+    id = murder_event.7
+    title = "murder_event.7.name"
+	desc = "murder_event.7.desc"
+	picture = GFX_evt_metropolis
+	
+	is_triggered_only = yes
+    
+	immediate = {
+	}
+	
+    option = {
+        name = "murder_event.7.a"
+		hidden_effect = { ship_event = { id = murder_event.8 days = 15 } }
+        leader = { 
+            add_experience = 50
+        }
+		owner = {
+			add_monthly_resource_mult = {
+				resource = society_research
+				value = @tier2researchreward
+				min = @tier2researchmin
+				max = @tier2researchmax
+			}
+			random_owned_pop = {
+				kill_pop = yes
+			}
+		}
+    }
+}
+
+# End
+ship_event = {
+    id = murder_event.8
+    title = "murder_event.8.name"
+	desc = "murder_event.8.desc"
+	picture = GFX_evt_metropolis
+	
+	is_triggered_only = yes
+	
+	immediate = {
+        fleet = {
+            set_event_locked = no
+        }
+	}
+    
+    option = {
+        name = "murder_event.8.a"
+		owner = {
+			add_monthly_resource_mult = {
+				resource = society_research
+				value = @tier2researchreward
+				min = @tier2researchmin
+				max = @tier2researchmax
+			}
+			
+			add_monthly_resource_mult = {
+				resource = engineering_research
+				value = @tier2researchreward
+				min = @tier2researchmin
+				max = @tier2researchmax
+			}
+			
+			add_resource = {
+				influence = 100
+			}
+		}
+    }
+}
